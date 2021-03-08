@@ -4,8 +4,8 @@ import SimpleCard from './card/SimpleCard';
 
 function App() {
   const [userList, setUserList] = useState([]);
-  const url = "http://task-planner.eastus2.azurecontainer.io:8080/users";
-  // const url = "http://localhost:8080/users" ;
+  const url = "https://task-planner.eastus2.azurecontainer.io/users";
+  // const url = "https://localhost/users" ;
   React.useEffect(() => {
     async function callA() {
       const response = await fetch(url, {
